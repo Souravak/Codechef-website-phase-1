@@ -1,0 +1,116 @@
+@media only screen and (max-width:320px) and (max-height:570px) {
+    .heroArrowDiv {
+        margin-top: 3em !important;
+    }
+    #aboutUs {
+        margin-top: 50%;
+    }
+    .heroDiv {
+        margin-top: 5em;
+    }
+    #EventHome {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width:375px) and (min-height:800px) {
+    .heroArrowDiv {
+        margin-top: 9em;
+    }
+    #aboutUs {
+        margin-top: 50%;
+    }
+    .heroDiv {
+        margin-top: 7em;
+    }
+}
+
+@media only screen and (max-width:770px) and (min-height:1020px) {
+    .heroArrowDiv {
+        margin-top: 9em;
+    }
+    #home::before {
+        height: 70%;
+    }
+    #aboutUs {
+        margin-top: 20%;
+    }
+    .heroDiv {
+        margin-top: 10em;
+    }
+    #EventHome {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:1030px) and (min-height:1360px) {
+    .heroArrowDiv {
+        margin-top: 6em !important;
+    }
+    #home::before {
+        height: 55%;
+    }
+    #aboutUs {
+        margin-top: 20%;
+    }
+    .heroDiv {
+        margin-top: 11em;
+    }
+    #EventHome {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width:280px) and (max-height:660px) {
+    .heroArrowDiv {
+        margin-top: 1em;
+    }
+    #home::before {
+        height: 55%;
+    }
+    #aboutUs {
+        margin-top: 26%;
+    }
+    .heroDiv {
+        margin-top: 0.3em;
+    }
+}
+
+@media only screen and (max-width:1024px) and (max-height:600px) {
+    .heroDiv {
+        margin-top: 2em !important;
+    }
+    .heroArrowDiv {
+        margin-top: 7em;
+    }
+}
+
+@media only screen and (max-width:511px) and (min-height:820px) {
+    .heroArrowDiv {
+        margin-top: 8em;
+    }
+    #aboutUs {
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width:1366px) and (min-height:1024px) {
+    .heroArrowDiv {
+        margin-top: 8em;
+    }
+    #aboutUs {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-height:1650px) {
+    #EventHome {
+        height: 40vh;
+    }
+}
+
+@media only screen and (min-width:900px) and (min-height:1650px) {
+    #EventHome {
+        height: 40vh;
+    }
+}

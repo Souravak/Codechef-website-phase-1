@@ -1,0 +1,138 @@
+#sponsors {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    margin-top: 10%;
+}
+
+.sponsorsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsorsText {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+.sponsorsText:after {
+    content: '';
+    background-color: rgba(213, 22, 219, 0.8);
+    position: absolute;
+    border-radius: 8px;
+    height: 4px;
+    width: 50%;
+    bottom: 0;
+    left: calc(50% - 25%);
+    top: 1.5em;
+}
+
+.sponsorsIconsDiv {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-right: 1em;
+}
+
+@keyframes translation {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-4100px);
+    }
+}
+
+.sponsorsIconsImg {
+    width: 15%;
+    display: inline-block;
+    margin: 0px 80px 0px 80px;
+    animation: translation 50s linear infinite;
+}
+
+.brochure-button-div {
+    align-items: center;
+}
+
+.viewAllBtn>i {
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+
+/* Responsive styles  */
+
+@media only screen and (max-width:1000px) {
+    .sponsorsIconsImg {
+        width: 17%;
+        margin: 0px 80px 0px 80px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .sponsorsIconsImg {
+        width: 19%;
+        margin: 0px 64px 0px 64px;
+    }
+    .sponsorsIconsImg {
+        animation: translation 80s linear infinite;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .sponsorsIconsImg {
+        width: 20%;
+    }
+    .sponsorsIconsDiv {
+        margin-right: 0.8em;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .sponsorsIconsDiv {
+        margin-right: 0em;
+    }
+    .sponsorsIconsImg {
+        width: 20%;
+        margin: 0 56px 0 56px;
+    }
+    .sponsorsIconsImg {
+        animation: translation 100s linear infinite;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .sponsorsIconsImg {
+        width: 22%;
+    }
+    .sponsorsIconsDiv {
+        margin-right: 0em;
+    }
+}
+
+
+/* Responsive styles for title  */
+
+@media only screen and (max-width: 1000px) {
+    .sponsorsText {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .sponsorsText {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .sponsorsText {
+        font-size: 28px;
+    }
+}

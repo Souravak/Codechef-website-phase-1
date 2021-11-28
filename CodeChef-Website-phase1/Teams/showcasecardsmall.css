@@ -1,0 +1,369 @@
+.projectShowcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.showcaseWrappersmall {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.showcaseCardsmall {
+    width: 320px;
+    height: 380px;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 12px rgba(213, 22, 219, 0.8);
+}
+
+.showcaseCardsmall:hover {
+    transform: translateY(-10px);
+    box-shadow: none;
+}
+
+.showcaseCardsmall::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(213, 22, 219, 0.8) 0%, #0C2943 100%);
+    z-index: 2;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.showcaseCardsmall:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+/* .showcaseCardsmall:hover::before {
+    opacity: 1;
+} */
+
+.showcaseCardsmall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+
+.showcaseCardsmall .infosmall {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.showcaseCardsmall:hover .infosmall {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.showcaseCardsmall .infosmall h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 28px;
+}
+
+.showcaseCardsmall .infosmall h3 {
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+.showcaseCardsmall .infosmall p {
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width:1350px) {
+    .showcaseWrappersmall {
+        width: 70%;
+    }
+    #TeamList {
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    #TeamList {
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    .showcaseCardsmall {
+        width: 240px;
+        height: 280px;
+    }
+    .showcaseWrappersmall {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .showcaseCardsmall {
+        width: 180px;
+        height: 260px;
+    }
+    .showcaseWrappersmall {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .showcaseCardsmall {
+        width: 180px;
+        height: 200px;
+    }
+    .showcaseWrappersmall {
+        width: 80%;
+    }
+    .showcaseCardsmall .infosmall h1 {
+        font-size: 24px;
+    }
+    .showcaseCardsmall .infosmall h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .showcaseCardsmall .infosmall p {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+    .showcaseCardsmall .infosmall .btn {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .showcaseCardsmall {
+        width: 140px;
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    /* .showcaseWrappersmall:nth-child(3) {
+        display: none;
+    } */
+    .showcaseCardsmall {
+        width: 150px;
+        height: 190px;
+    }
+    .showcaseCardsmall .infosmall h1 {
+        font-size: 22px;
+    }
+    .showcaseCardsmall .infosmall h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .showcaseCardsmall .infosmall p {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .showcaseCardsmall .infosmall .btn {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    /* .showcaseWrappersmall:nth-child(3) {
+        display: none;
+    } */
+    .showcaseCardsmall {
+        width: 100px;
+        height: 120px;
+    }
+    .showcaseCardsmall .infosmall h1 {
+        font-size: 15px;
+    }
+    .showcaseCardsmall .infosmall h3 {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .showcaseCardsmall .infosmall p {
+        font-size: 8px;
+        margin-top: 4px;
+    }
+    .showcaseCardsmall .infosmall .btn {
+        font-size: 10px;
+    }
+    .viewAllBtn {
+        width: 140px;
+        height: 42px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .projectTabs {
+        padding: .3em;
+    }
+    .blackBox1 {
+        height: 60px;
+    }
+    .blackBox2 {
+        height: 60px;
+    }
+    .projectTabs ul li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    /* .showcaseWrappersmall:nth-child(3) {
+        display: none;
+    } */
+    #EventHome {
+        height: 90vh;
+    }
+    #TeamList {
+        margin-top: 15%;
+    }
+    .showcaseCardsmall {
+        width: 100px;
+        height: 120px;
+    }
+    .showcaseCardsmall .infosmall h1 {
+        font-size: 14px;
+    }
+    .showcaseCardsmall .infosmall h3 {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .showcaseCardsmall .infosmall p {
+        font-size: 6px;
+        margin-top: 4px;
+    }
+    .showcaseCardsmall .infosmall .btn {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .showcaseWrappersmall {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .showcaseCardsmall {
+        width: 240px;
+        height: 285px;
+        margin-top: 32px;
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+    .showcaseCardsmall:hover {
+        transform: translateY(-10px);
+        box-shadow: none;
+    }
+    .showcaseCardsmall::before {
+        background: linear-gradient(180deg, rgba(7, 95, 176, 0) -19.3%, #0C2943 100%);
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .showcaseCardsmall:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    .showcaseCardsmall .infosmall {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: 0.5s all;
+    }
+    .showcaseCardsmall:hover .infosmall {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .showcaseCardsmall .infosmall h1 {
+        font-size: 24px;
+    }
+    .showcaseCardsmall .infosmall h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .showcaseCardsmall .infosmall p {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+    .showcaseCardsmall .infosmall .btn {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .projectTabs ul li {
+        padding: 12px 28px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .projectTabs {
+        padding: .1em;
+    }
+    .blackBox1 {
+        display: none;
+    }
+    .blackBox2 {
+        display: none;
+    }
+    .projectTabs ul li {
+        font-size: 16px;
+    }
+    .projectTabs {
+        background-color: #111;
+    }
+}
+
+
+/* Responsive styles for title  */
+
+@media only screen and (max-width:1000px) {
+    .projectsTitle {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .projectsTitle {
+        font-size: 32px !important;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .projectsTitle {
+        font-size: 28px !important;
+    }
+}

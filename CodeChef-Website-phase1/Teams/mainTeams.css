@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*ScrollBar*/
+
+::-webkit-scrollbar {
+    width: 11px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: black
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(213, 22, 219, 0.8);
+    ;
+}
+
+
+/* Scroll to top*/
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(213, 22, 219, 0.8);
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(213, 22, 219, 0.8);
+    opacity: 90%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out
+}
+
+.scroll-to-top:hover {
+    font-size: 30px;
+}
+
+
+/*Arrow*/
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2.1px;
+    margin-left: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+/* Home Section */
+
+#EventHome {
+    overflow: hidden;
+    background: linear-gradient(155.27deg, rgba(213, 22, 219, 0.8) -326.75%, #111111 74.45%);
+    width: 100%;
+    height: 100vh;
+}
+
+.EventHeroDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* margin-left: 3%; */
+    margin-top: 15%;
+    z-index: 3;
+}
+
+.EventHero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.EventHero1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.EventText {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-right: 3%;
+    margin-left: 25%;
+}
+
+.EventAbout {
+    font-size: 26px;
+    line-height: 190%;
+    color: #fff;
+}
+
+.ViewEventsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.viewAllBtn {
+    /* margin-top: 1.5rem; */
+    text-decoration: none;
+    width: 120px;
+    height: 48px;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.1s ease-in-out;
+    background: rgba(213, 22, 219, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+.viewAllBtn:hover {
+    background: rgba(213, 22, 219, 0.8);
+    font-size: 16px;
+}
+
+.year {
+    margin-top: 5%;
+}
+
+@media only screen and (max-width:1430px) {
+    .EventText {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        margin-right: 1%;
+        margin-left: 15%;
+    }
+    .EventAbout {
+        font-size: 20px;
+        line-height: 180%;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    #EventHome {
+        height: 100%;
+    }
+    .EventHero {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .EventText {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin-top: 12%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .EventAbout {
+        font-size: 20px;
+        line-height: 180%;
+    }
+    .viewAllBtn1 {
+        margin-top: 2rem;
+        width: 130px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .viewAllBtn1 {
+        margin-top: 1.5rem;
+        width: 130px;
+        height: 40px;
+    }
+    .viewAllBtn a {
+        font-size: 16px;
+    }
+    .scroll-to-top {
+        right: 3%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .scroll-to-top:hover {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .EventAbout {
+        font-size: 16px;
+        line-height: 180%;
+    }
+    #EventHome {
+        height: 80vh;
+    }
+}
